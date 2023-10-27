@@ -2,5 +2,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 New-Item -ItemType Directory -Path C:\Users\WDAGUtilityAccount\Desktop\chocolatey-export-assets
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/vijaidjearam/chocolatey-export-assets/main/chocolatey-export-assets.py" -OutFile "C:\Users\WDAGUtilityAccount\Desktop\chocolatey-export-assets\chocolatey-export-assets.py"
 choco install -y python
+$Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") 
 python.exe -m pip install --upgrade pip
 pip install requests
