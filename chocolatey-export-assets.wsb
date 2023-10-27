@@ -1,0 +1,9 @@
+<Configuration>
+    <VGpu>Enable</VGpu>
+    <Networking>Enable</Networking>
+    <MappedFolders>
+    </MappedFolders>
+    <LogonCommand>
+    <Command>C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -command "start powershell {-noexit iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/vijaidjearam/chocolatey-export-assets/main/startup_script.ps1'))}"</Command>
+    </LogonCommand>
+</Configuration>
